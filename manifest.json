@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Customer Count Tracker",
+  "description": "Track the number of customers for the last hour of work.",
+  "version": "1.1.0",
+  "action": {
+    "default_title": "Customer Counter",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "alarms", "notifications"],
+  "icons": {
+    "128": "icons/128.png"
+  }
+}
