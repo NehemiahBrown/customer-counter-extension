@@ -1,0 +1,77 @@
+:root{
+    --main-color: #572931;
+    --secondary-color: #b22a2e;
+    --text-color: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+header{
+    margin: 30px;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+#players{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.new-player{
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 6px;
+}
+
+.player-name,
+.player-guess{
+border: none;
+border-radius: 5px;
+padding: 5px 2px;
+}
+
+.player-name{
+    flex: 1;
+}
+
+.player-guess{
+    width: 40px;
+    padding-left: 5px;
+}
+
+.add-player-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: bold;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
