@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,24 @@
   <title>Customer Counter</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-<script src="popup.js"></script>
+  <main>
+    <h1>Add The Players</h1>
+    <section id="players-field">
+      <fieldset id="player">
+        <legend>Name</legend>
+        <input type="text">
+        <input type="number" placeholder="Player Guess">
+      </fieldset>
+    </section>
+    <section class="buttons">
+      <button id="add-player">ADD PLAYER</button>
+      <button>SUBMIT GUESSES</button>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
 </body>
+
 </html>
