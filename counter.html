@@ -1,0 +1,41 @@
+<!-- counter.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reception Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Reception Counter</h1>
+      <hr />
+    </header>
+
+    <section class="counter-wrap">
+      <div class="count" id="count">0</div>
+
+      <div class="counter-actions">
+        <button class="big-btn" id="plus-one" type="button">+1</button>
+        <button class="big-btn ghost" id="undo" type="button">UNDO</button>
+      </div>
+
+      <button class="submit-btn" id="submit-total" type="button">SUBMIT TOTAL</button>
+    </section>
+
+    <section class="result" id="result" hidden></section>
+
+    <section class="actions">
+      <button class="danger-btn" id="reset-game" type="button">RESET GAME</button>
+    </section>
+
+    <p class="hint" id="status"></p>
+  </main>
+
+  <script src="counter.js"></script>
+</body>
+</html>
