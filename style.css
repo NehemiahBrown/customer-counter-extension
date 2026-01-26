@@ -2,7 +2,6 @@
 :root{
     --main-color: #572931;
     --secondary-color: #b22a2e;
-    --text-color: #000000;
   }
   
   *{
@@ -40,6 +39,7 @@
     margin-top: 8px;
   }
   
+  /* players list */
   #players{
     display: flex;
     flex-direction: column;
@@ -106,7 +106,10 @@
   
   .add-player-btn{ background-color: var(--secondary-color); }
   .submit-btn{ background-color: rgba(93, 163, 250, 0.95); }
-  .danger-btn{ background-color: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.25); }
+  .danger-btn{
+    background-color: rgba(0,0,0,.35);
+    border: 1px solid rgba(255,255,255,.25);
+  }
   
   .hint{
     font-size: 12px;
@@ -159,12 +162,6 @@
     gap: 8px;
   }
   
-  .result h2{
-    font-size: 16px;
-  }
-  
-  .result .line{
-    font-size: 13px;
-    opacity: 0.95;
-  }
+  .result h2{ font-size: 16px; }
+  .result .line{ font-size: 13px; opacity: 0.95; }
   
