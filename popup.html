@@ -1,32 +1,32 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add Players</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Counter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
     <header>
       <h1>Add Players</h1>
-      <hr />
+      <hr>
     </header>
-
-    <section id="players"></section>
-
-    <section class="actions">
-      <button class="add-player-btn" id="add-player" type="button">ADD PLAYER</button>
-      <button class="submit-btn" id="submit-players" type="button">SUBMIT PLAYERS</button>
-      <button class="danger-btn" id="reset-game" type="button">RESET GAME</button>
+    <section id="players">
+        <fieldset class="new-player">
+          <legend>&nbsp;Player&nbsp;</legend>
+        <input type="text" id="player-name" class="player-name" placeholder="Name">
+        <input type="number" id="player-guess" class="player-guess">
+      </fieldset>
     </section>
-
-    <p class="hint" id="status"></p>
+    <section>
+      <button class="add-player-btn" id="add-player">ADD PLAYER</button>
+    </section>
   </main>
-
   <script src="popup.js"></script>
 </body>
+
 </html>
