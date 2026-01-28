@@ -1,79 +1,166 @@
 :root{
     --main-color: #572931;
     --secondary-color: #b22a2e;
-    --text-color: #000000;
-}
-
-*{
+  }
+  
+  *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
+  }
+  
+  body{
     background-color: var(--main-color);
     color: white;
     width: 320px;
     padding: 12px;
-}
-
-main{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+  
+  main{
     display: flex;
     flex-direction: column;
     gap: 12px;
     width: 100%;
-}
-
-header{
+  }
+  
+  header{
     text-align: center;
-    margin-bottom: 12px;
-}
-
-header h1{
-    font-size: 28px;
-}
-
-#players{
+    margin-bottom: 6px;
+  }
+  
+  header h1{
+    font-size: 24px;
+  }
+  
+  hr{
+    opacity: 0.35;
+    margin-top: 8px;
+  }
+  
+  /* players list */
+  #players{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    max-width: 400px;
-}
-
-.new-player{
-    padding: 5px 10px;
-    border-radius: 5px;
+  }
+  
+  /* Fieldset styling */
+  .new-player{
+    padding: 8px 10px;
+    border-radius: 8px;
     display: flex;
-    gap: 6px;
+    gap: 8px;
     width: 100%;
-}
-
-.player-name,
-.player-guess{
-border: none;
-border-radius: 5px;
-padding: 5px 2px;
-}
-
-.player-name{
-    flex: 1;
-}
-
-.player-guess{
-    width: 40px;
-    padding-left: 5px;
-}
-
-.add-player-btn{
-    background-color: var(--secondary-color);
+    margin: 0;
+    min-inline-size: 0;
+    border: 1px solid rgba(255,255,255,.25);
+    background: rgba(0,0,0,.10);
+  }
+  
+  .new-player legend{
+    padding: 0 6px;
+    font-size: 12px;
+    color: rgba(255,255,255,.9);
+  }
+  
+  .player-name,
+  .player-guess{
     border: none;
-    padding: 5px 10px;
+    border-radius: 6px;
+    padding: 8px 10px;
+    min-width: 0;
+    background: #fff;
+    color: #111;
+  }
+  
+  .player-name{ flex: 1; }
+  
+  .player-guess{
+    width: 80px;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .actions{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .add-player-btn,
+  .submit-btn,
+  .danger-btn,
+  .big-btn{
+    border: none;
+    padding: 10px 12px;
     color: white;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 20px;
+    font-weight: 800;
+    border-radius: 999px;
     width: 100%;
     text-align: center;
-}
-
+    cursor: pointer;
+  }
+  
+  .add-player-btn{ background-color: var(--secondary-color); }
+  .submit-btn{ background-color: rgba(93, 163, 250, 0.95); }
+  .danger-btn{
+    background-color: rgba(0,0,0,.35);
+    border: 1px solid rgba(255,255,255,.25);
+  }
+  
+  .hint{
+    font-size: 12px;
+    opacity: 0.9;
+    min-height: 16px;
+  }
+  
+  /* Counter page */
+  .counter-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .count{
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 16px;
+    background: rgba(0,0,0,.12);
+    border: 1px solid rgba(255,255,255,.2);
+  }
+  
+  .counter-actions{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .big-btn{
+    flex: 1;
+    border-radius: 16px;
+    font-size: 22px;
+    padding: 16px 12px;
+    background: var(--secondary-color);
+  }
+  
+  .big-btn.ghost{
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.25);
+  }
+  
+  .result{
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(0,0,0,.12);
+    border: 1px solid rgba(255,255,255,.2);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .result h2{ font-size: 16px; }
+  .result .line{ font-size: 13px; opacity: 0.95; }
+  
